@@ -1,0 +1,80 @@
+html, body {
+margin: 0;
+}
+h1 {
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: normal;
+    font-size: 35px;
+    text-align: center;
+    padding-top: 30px;
+}
+
+h2 {
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 200;
+    font-size: 5vh;
+    text-align: center;
+}
+
+.flex-pill{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#wrapper {
+    position: relative;
+    min-height: 100vh;
+    width: 100vw;
+}
+
+#pills {
+    background-color:bisque;
+}
+
+#omega3 {
+    background-color: #FFD058;
+    margin-left: 5vw;
+    position: absolute;
+    bottom: 30px;
+    width: 20vw;
+    height: 40vw;
+    border-radius: 50%;
+    transform: rotate(5deg);
+}
+#B6 {
+    background-color: #FFB3C8;
+    margin:1px;
+    position: absolute;
+    left:24vw;
+    bottom: 30px;
+    width: 20vw;
+    height: 20vw;
+    border-radius: 50%;
+}
+
+#vitaminc {
+    background-color: #FFA156;
+    position: absolute;
+    left:26vw;
+    bottom: 24.5vw;
+    width: 12vw;
+    height: 12vw;
+    border-radius: 50%;
+    transform: rotate(-10deg);
+}
+#probiotics {
+    background-color: #C4CBFF;
+    position: absolute;
+    left: 28vw;
+    bottom: 30vh;
+    width: 40vw;
+    height: 10vw;
+    border-radius: 35%;
+    transform: rotate(70deg);
+}
+
+#vitaminc h2 {
+    font-size: 2vw;
+}
+
