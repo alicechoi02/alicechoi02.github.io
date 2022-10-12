@@ -182,3 +182,9 @@ input {
     position: relative; 
     margin-bottom: -20px;
 }
+
+.redirect {
+    position: fixed;
+    left: 1%;
+    bottom: 2%;
+  }
