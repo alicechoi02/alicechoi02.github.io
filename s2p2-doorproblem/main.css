@@ -1,0 +1,190 @@
+h1 {
+    font-family: Montserrat;
+    src: url(Montserrat-VariableFont_wght.ttf);
+    font-weight: Bold;
+    /* padding-top: 40px; */
+}
+
+#heading {
+    width: 100vw;
+    height: 20vh;
+    background-color: aliceblue;
+}
+.title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#doors {
+    background-color: aliceblue;
+    height: 80vh;
+    width: 100vw;
+    display: flex; 
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+/* Door Classes */
+.door-frame-1 {
+    width: 250px;
+    height: 450px;
+    border: #a1bdd4 10px solid;
+    overflow: hidden;
+    float: left;
+}
+
+.door-frame-3 {
+    width: 250px;
+    height: 450px;
+    border: #a1bdd4 10px solid;
+    overflow: hidden;
+    float: left;
+}
+
+/* .door-frame-3 {
+    width: 250px;
+    height: 450px;
+    border: #a1bdd4 10px solid;
+    overflow: hidden;
+} */
+
+.door-frame-2 {
+    width: 250px;
+    height: 450px;
+    border: #a1bdd4 10px solid;
+    float: left;
+}
+
+.door {
+    position: absolute; 
+    width: 100%;
+    height: 100%;
+    top: 0%;
+    left: 0%;
+    z-index: 10;
+    transition: 3s;
+}
+
+/* Door Frames */
+#door-frame1 {
+    position: relative;
+    /* left: 150px;
+    top: 150px;  */
+}
+
+#door-frame2 {
+    position: relative;
+    /* left: 595px;
+    top: 150px;  */
+}
+#door-frame3 {
+    position: relative;
+    /* left: 1040px;
+    top: 150px;  */
+}
+
+/* Behind Doors */
+#door2-back {
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    z-index:20;
+}
+
+#blackhole {
+    position: fixed;
+    top: 0;
+    left: 0;
+    pointer-events: none;
+    width: 100vw;
+    height: 100vh;
+    z-index:100;
+    background-color: black;
+    opacity: 0;
+}
+
+#locked-message{
+    left: 14%;
+    top: -15%;
+    position: absolute;
+    opacity: 0;
+    transition: 0.5s;
+}
+
+#prize {
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+
+/* Hovers */
+#door-frame1:hover ~ #blackhole {
+    opacity: 1;
+    transition: 2s;
+    transition-delay: 3s;
+}
+
+#door1:hover {
+    top: -85%;
+    transition: 3s;
+}
+
+#door2:hover {
+    animation: wiggle 0.5s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: 3;
+}
+
+#door2:hover ~ #locked-message {
+    opacity: 1;
+    transition: 1s;
+}
+
+#door3:hover {
+    top: -85%;
+    transition: 3s;
+}
+
+
+
+#locked-message h3 {
+    font-family: Montserrat;
+    font-weight: 100;
+    color: black;
+}
+
+#winning-message h3 {
+    font-family: Montserrat;
+    font-size: 30;
+    color: #d3487e;
+    position: absolute;
+    top: 25%; 
+    left: 25%
+}
+
+
+img {
+    width: 100%;
+    height: 200%
+}
+
+
+@keyframes wiggle {
+    25% {left: -1%};
+    50% {left: 1%};
+    75% {left: -1%};
+    100% {left: 1%};
+}
+
+/* Viewport Sizes */
+@media only screen and (max-width: 1000px) {
+    .door-frame-1 {
+        display: none; 
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .door-frame-2 {
+        display: none; 
+    }
+}
