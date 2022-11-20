@@ -1,0 +1,22 @@
+body{
+    font-family:'Courier New', Courier, monospace;
+}
+
+#qr-code {
+    width: 100px;
+    height: 100px;
+}
+
+#instructions {
+    margin-bottom: 3vh;
+}
+
+#my-iframe {
+    width: 90vw;
+    height: 40vh;
+}
+
+#form-link {
+    
+    margin-top: 3vh;
+}
