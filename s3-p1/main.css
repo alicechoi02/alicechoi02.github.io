@@ -1,5 +1,6 @@
 body{
     font-family:'Courier New', Courier, monospace;
+    font-weight: normal;
 }
 
 h1 {
@@ -31,10 +32,40 @@ img {
 }
 
 #my-iframe {
-    width: 450px;
-    height: 315px;
+    width: 90vw;
+    height: 55vh;
 }
 
-#form-link {
+
+.button {
     margin-top: 3vh;
+    width:110px;
+    height: 30px;
+}
+
+.miro {
+    width: 45vw; 
+    height: 40vh;
+    top: 10vh; 
+    position: absolute;
+}
+
+#party {
+    left: 3vw; 
+}
+
+#calm {
+    right: 3vw; 
+}
+
+.survey-iframe {
+    width: 100%;
+    height: 100%;
+}
+
+#explanation {
+    position: absolute;
+    top:60vh;
+    left: 3vw; 
+    right: 3vw;
 }
