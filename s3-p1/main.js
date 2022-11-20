@@ -9,7 +9,7 @@ function makeVideo () {
     if (medType <= 4) {
         iframe.src = "https://www.youtube.com/embed/YGlIYgd0Mfw";
     } else {
-        iframe.src = "https://www.youtube.com/embed/naD-2szCB5s";
+        iframe.src = "https://www.youtube.com/embed/STHwcaQZyUA";
     }
 }
 
