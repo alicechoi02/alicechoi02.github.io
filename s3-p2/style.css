@@ -1,0 +1,158 @@
+/* TEXT */
+#html, body {
+    font-family: "RobotoMono-Regular";
+    padding: 0;
+    margin: 0;
+    width: 100vw;
+    height: 100vh; 
+}
+
+.IFTTT {
+    font-weight: bold; 
+    text-align: left; 
+    font-size: 5vh;
+    padding-left: 10%;
+}
+
+p {
+    text-align: center;
+    padding-left: 20vw;
+    padding-right: 20vw;
+    padding-top: 1vh;
+    padding-bottom: 1vh;
+    color: white;
+}
+
+#description {
+    position: absolute;
+    opacity: 0;
+    animation: uncover 1s; 
+    top:0;
+    animation-delay: 5s;
+    animation-fill-mode: forwards;
+    background-color: #1e4541;
+}
+
+#if-text, #then-text {
+    position: absolute; 
+    /* background-color: red; */
+    height: 5vh;
+    width: 40%;
+
+}
+
+/* LEFT SIDE */
+#left {
+    position: absolute;
+    width: 20vw;
+    height: 80vh;
+    bottom: 0px;
+    left: 0px;
+    overflow: hidden;
+    display: flex; 
+    flex-direction: column-reverse; 
+    align-items: center;
+}
+
+#if {
+    position: relative;
+    height: 10vw;
+    width: 100%; 
+}
+
+#if-gcal {
+    position: absolute;
+    width: 40%;
+    height: 80%; 
+    left: 50%;
+    background-image: url("gcal.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    
+}
+
+#then-moretree {
+    position: absolute;
+    width: 40%;
+    height: 100%; 
+    left: 50%;
+    background-image: url("moretree.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    
+}
+
+#this {
+    position: relative; 
+    height: 2vw;
+    width: 1vw;
+    background-color: #e6e6e6;
+    margin-right: -40%;
+    animation: grow 1.8s; 
+    animation-timing-function: ease-in-out;
+    animation-delay: 3.8s;
+    animation-fill-mode: forwards;
+}
+
+#then {
+    position: relative;
+    height: 8vw;
+    width: 100%; 
+}
+
+/* RIGHT SIDE */
+
+#right {
+    position: absolute;
+    width: 80vw;
+    height: 80vh;
+    bottom: 0px;
+    background-image: url("tree.gif");
+    background-size: contain; 
+    background-position-y: bottom; 
+    background-position-x: center;
+    background-repeat: no-repeat;
+    right: 0px;
+}
+
+#tree-cover {
+    width: 100%;
+    height: 100%;
+    background-image: url("tree-cover.jpg");
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    opacity: 0;
+    animation: uncover 0.1s; 
+    animation-delay: 8s;
+    animation-fill-mode: forwards;
+}
+
+/* REFRESH BUTTON */
+#refresh {
+    position: absolute;
+    width: 5vw;
+    height: 5vw;
+    bottom: 0px;
+    right: 0px;
+}
+
+.button {
+    background-color: white;
+    border: none;
+}
+
+#refresh-button:hover {
+    cursor: pointer;
+}
+
+
+/* ANIMATIONS */
+@keyframes grow {
+    100% {height: 45vh};
+}
+
+@keyframes uncover {
+    100% {opacity: 1};
+}
+
