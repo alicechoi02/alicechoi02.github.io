@@ -1,190 +1,162 @@
-html, body {
-margin: 0;
-}
-h1 {
-    font-family: 'Courier New', Courier, monospace;
-    font-weight: normal;
-    font-size: 28px;
-    text-align: center;
-    padding-top: 30px;
-}
-
-h2 {
-    font-family: 'Courier New', Courier, monospace;
-    font-weight: 200;
-    font-size: 3vw;
-    text-align: center;
-}
-
-p{
-    font-family: 'Courier New';
-    font-size: 16px;
-    text-align: center;
-    margin-left: 50px;
-    margin-right: 50px;
-    margin-top: -15px;
-
-}
-.flex-pill{
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-}
-
-#wrapper {
-    position: relative;
-    min-height: 100vh;
+/* TEXT */
+#html, body {
+    font-family: "RobotoMono-Regular";
+    padding: 0;
+    margin: 0;
     width: 100vw;
+    height: 100vh; 
 }
 
-#pills {
-    background-color:bisque;
+.IFTTT {
+    font-weight: bold; 
+    text-align: left; 
+    font-size: 5vh;
+    padding-left: 10%;
 }
 
-#omega3 {
-    background-color: #FFD058;
-    position: absolute;
-    left: 10vw;
-    bottom: 25px;
-    width: 20vw;
-    height: 40vw;
-    border-radius: 50%;
-    transform: rotate(5deg);
-}
-#B6 {
-    background-color: #FFB3C8;
-    margin:1px;
-    position: absolute;
-    left: 30vw;
-    bottom: 30px;
-    width: 20vw;
-    height: 20vw;
-    border-radius: 50%;
-}
-#probiotics {
-    background-color: #C4CBFF;
-    position: absolute;
-    left: 38vw;
-    bottom: 30vh;
-    width: 35vw;
-    height: 10vw;
-    border-radius: 35%;
-    transform: rotate(70deg);
-}
-#vitaminc {
-    background-color: #FFA156;
-    position: absolute;
-    left: 59vw;
-    bottom: 23vw;
-    width: 12vw;
-    height: 12vw;
-    border-radius: 50%;
-    transform: rotate(-10deg);
-}
-
-#biotin {
-    background-color: #edf5df;
-    position: absolute;
-    left: 70vw;
-    bottom: 5vh;
-    width: 15vw;
-    height: 35vw;
-    border-radius: 40%;
-    transform: rotate(28deg);
-
-}
-.vitaminc {
-    font-size: 100%;
-    padding-top: 20px;
-}
-
-#omega3-pagetop {
-    background-color: #FFD058;
-    position: absolute;
-    left: 40vw;
-    top: 10px;
-    width: 20vw;
-    height: 10vw;
-    border-radius: 50%;
-}
-#b6-pagetop {
-    background-color: #FFB3C8;
-    position: absolute;
-    left: 45vw;
-    top: 10px;
-    width: 10vw;
-    height: 10vw;
-    border-radius: 50%;
-}
-#probiotics-pagetop {
-    background-color: #C4CBFF;
-    position: absolute;
-    left: 32.5vw;
-    top: 10px;
-    width: 35vw;
-    height: 10vw;
-    border-radius: 30%;
-}
-#vitaminc-pagetop {
-    background-color: #FFA156;
-    position: absolute;
-    left: 46vw;
-    top: 10px;
-    width: 10vw;
-    height: 10vw;
-    border-radius: 50%;
-}
-#biotin-pagetop {
-    background-color: #edf5df;
-    position: absolute;
-    left: 36vw;
-    top: 10px;
-    width: 28vw;
-    height: 10vw;
-    border-radius: 40%;
-}
-#back-to-home{
-    font-family:'Courier New', Courier, monospace;
-    position: absolute;
-    top: 25vh;
-    width: 100vw;
+p {
     text-align: center;
+    padding-left: 20vw;
+    padding-right: 20vw;
+    padding-top: 1vh;
+    padding-bottom: 1vh;
+    color: white;
+}
+
+#description {
+    position: absolute;
+    opacity: 0;
+    animation: uncover 1s; 
+    top:0;
+    animation-delay: 5s;
+    animation-fill-mode: forwards;
+    background-color: #1e4541;
+}
+
+#if-text, #then-text {
+    position: absolute; 
+    /* background-color: red; */
+    height: 5vh;
+    width: 40%;
+
 }
 
 a:link {
-    color: black;
-    text-decoration: none;
-}
-  
-a:hover {
-color: grey;
+    color: white;
 }
 
-table {
+/* LEFT SIDE */
+#left {
     position: absolute;
-    top: 40vh;
-    margin-left: 22vw;
-}
-table th {
-    width: 22vw;
-    background-color:#bbbbbb;
-    text-align: left;
-    font-family: 'Courier New', Courier, monospace;
-}
-
-table td {
-    font-family: 'Courier New', Courier, monospace;
-    width: 60vh;
-    border: 0.5px solid black;
+    width: 20vw;
+    height: 80vh;
+    bottom: 0px;
+    left: 0px;
+    overflow: hidden;
+    display: flex; 
+    flex-direction: column-reverse; 
+    align-items: center;
 }
 
-input {
+#if {
+    position: relative;
+    height: 10vw;
+    width: 100%; 
+}
+
+#if-gcal {
+    position: absolute;
+    width: 40%;
+    height: 80%; 
+    left: 50%;
+    background-image: url("gcal.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    
+}
+
+#then-moretree {
+    position: absolute;
+    width: 40%;
+    height: 100%; 
+    left: 50%;
+    background-image: url("moretree.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    
+}
+
+#this {
     position: relative; 
-    margin-bottom: -20px;
+    height: 2vw;
+    width: 1vw;
+    background-color: #e6e6e6;
+    margin-right: -40%;
+    animation: grow 1.8s; 
+    animation-timing-function: ease-in-out;
+    animation-delay: 3.8s;
+    animation-fill-mode: forwards;
 }
 
-.redirect {
-    position: fixed;
-    left: 1%;
-    bottom: 2%;
-  }
+#then {
+    position: relative;
+    height: 8vw;
+    width: 100%; 
+}
+
+/* RIGHT SIDE */
+
+#right {
+    position: absolute;
+    width: 80vw;
+    height: 80vh;
+    bottom: 0px;
+    background-image: url("tree.gif");
+    background-size: contain; 
+    background-position-y: bottom; 
+    background-position-x: center;
+    background-repeat: no-repeat;
+    right: 0px;
+}
+
+#tree-cover {
+    width: 100%;
+    height: 100%;
+    background-image: url("tree-cover.jpg");
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    opacity: 0;
+    animation: uncover 0.1s; 
+    animation-delay: 8s;
+    animation-fill-mode: forwards;
+}
+
+/* REFRESH BUTTON */
+#refresh {
+    position: absolute;
+    width: 5vw;
+    height: 5vw;
+    bottom: 0px;
+    right: 0px;
+}
+
+.button {
+    background-color: white;
+    border: none;
+}
+
+#refresh-button:hover {
+    cursor: pointer;
+}
+
+
+/* ANIMATIONS */
+@keyframes grow {
+    100% {height: 45vh};
+}
+
+@keyframes uncover {
+    100% {opacity: 1};
+}
+
