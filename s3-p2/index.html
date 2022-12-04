@@ -1,44 +1,34 @@
-<!doctype html>
-<html lang="en">
 <head>
-    <title> money tree</title>
-    <script src="main.js"></script>
-    <link rel="stylesheet" href="style.css"> 
-    <link rel="icon" type="image/x-icon" href="seed.png">
+    <link rel="stylesheet" href="style.css">
+    <title> MY VITAMINS</title>
 </head>
-
-<div id = "description">
-    <p> Making giving back easier than ever. With this extension, More:Tree will plant a tree under your name every time your paycheck comes in. Get started now!</p>
-</div>
-<div id = "left">
-    <div id = "if">
-        <div id = "if-text", class = "IFTTT">
-            IF
+<body>
+    <div id="wrapper">
+        <h1> Did I have my vitamins today?</h1>
+        <p> Click on each vitamin to remind yourself why you're taking it, and when to take it.<p>
+        <div id="omega3" class="flex-pill">
+            <input type="checkbox">
+            <h2><a href ="omega3.html">Omega 3</a></h2>
         </div>
-        <div id = "if-gcal">
+        <div id="b6" class="flex-pill">
+            <input type="checkbox">
+            <h2><a href="b6.html">B6</a></h2>
         </div>
-    </div>
-
-    <div id = "this">
-    </div>
-
-    <div id = "then">
-        <div id = "then-text", class = "IFTTT THEN">
-            THEN
+        <div id="probiotics" class="flex-pill">
+            <input type="checkbox">
+            <h2><a href="probiotics.html">Probiotics</a></h2>
         </div>
-        <div id = "then-moretree">
+        <div id="vitaminc" class="flex-pill">
+            <input type="checkbox">
+            <h2 class="vitaminc"><a href="vitaminc.html">Vitamin C</a></h2>
         </div>
+        <div id="biotin" class="flex-pill">
+            <input type="checkbox">
+            <h2><a href="biotin.html">Biotin</a></h2>
+        </div>
+
+        <div class="redirect"><a href="https://estellahu.github.io/Sec1/homepage.html"><img src="back-button.PNG" width="50px"></a></div>
+
     </div>
 
-</div>
-
-<div id = "right">
-    <div id = "tree-cover">
-    </div>
-
-    <div id = "refresh">
-        <button onclick="refreshPage()" class = "button">
-            <img id="refresh-button" src="refresh.png" width="100%" height="100%" onclick="refreshPage();" alt = "This button refreshes the page" />
-          </button>
-    </div>
-</div> 
+</body>
