@@ -41,8 +41,13 @@ p {
 
 }
 
-a:link {
+.desc a:link {
     color: white;
+}
+
+.app-button a:link {
+    color: white;
+    text-decoration: none;
 }
 
 /* LEFT SIDE */
@@ -94,7 +99,7 @@ a:link {
     margin-right: -40%;
     animation: grow 1.8s; 
     animation-timing-function: ease-in-out;
-    animation-delay: 3.8s;
+    animation-delay: 3.7s;
     animation-fill-mode: forwards;
 }
 
@@ -132,7 +137,7 @@ a:link {
     animation-fill-mode: forwards;
 }
 
-/* REFRESH BUTTON */
+/* BUTTONS */
 #refresh {
     position: absolute;
     width: 5vw;
@@ -141,7 +146,22 @@ a:link {
     right: 0px;
 }
 
-.button {
+#applet {
+    position: absolute;
+    width: 14vw;
+    height: 3vw;
+    bottom: 2vh;
+    right: 6vw;
+    background-color: #1e4541;
+    border-radius: 1vh;
+    display: flex; 
+    align-items: center;
+    justify-content: center;
+
+    color: white; 
+}
+
+.refresh-button {
     background-color: white;
     border: none;
 }
@@ -160,3 +180,9 @@ a:link {
     100% {opacity: 1};
 }
 
+@keyframes toggle {
+    from {opacity: 1;
+        background-position-x: 0v;}
+    to {opacity: 1;
+        background-position-x: -80vw;}
+}
