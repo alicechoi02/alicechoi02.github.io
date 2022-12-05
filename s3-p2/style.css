@@ -1,4 +1,9 @@
 /* TEXT */
+@font-face {
+    font-family: "RobotoMono-Regular";
+    src: url("RobotoMono-Regular.ttf");
+}
+    
 #html, body {
     font-family: "RobotoMono-Regular";
     padding: 0;
