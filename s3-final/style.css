@@ -1,20 +1,66 @@
-html, body {
-  height: 100%;
-}
-
+html,
 body {
+  height: 100%;
   display: flex;
   flex-direction: column;
-
   align-items: center;
+  font-family: Zen-Dots-Regular;
+}
+
+p {
+  font-family: Space-Grotesk-Regular;
 }
 
 input {
   position: relative;
+  font-family: Space-Grotesk-Light;
+  padding: 5px 5px;
+  stroke: 2px;
+}
+
+
+#title {
+  width: 80vh;
 }
 
 #instructions {
-  width: 60vw; 
+  width: 40vw;
   text-align: center;
   padding-bottom: 5vh;
 }
+
+button {
+  border: black solid 2px;
+  background-color: white;
+  border-radius: 8px;
+  color: black;
+  padding: 5px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  font-family: Space-Grotesk-Light;
+  box-shadow: 5px 5px 0px rgba(0, 0, 0, 0.9);
+}
+
+button:hover {
+  background-color: rgb(161, 238, 255);
+  box-shadow: 5px 5px 0px rgba(245, 108, 93, 0.9);
+}
+
+
+@font-face {
+  font-family: "Zen-Dots-Regular";
+  src: url("ZenDots-Regular.ttf");
+}
+
+@font-face {
+  font-family: "Space-Grotesk-Regular";
+  src: url("SpaceGrotesk-Regular.ttf");
+}
+
+@font-face {
+  font-family: "Space-Grotesk-Light";
+  src: url("SpaceGrotesk-Light.ttf");
+}
+
