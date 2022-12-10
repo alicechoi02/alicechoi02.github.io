@@ -1,18 +1,128 @@
-#main-image {
+.element {
     width: 95vw;
     height: 95vh;
-    margin-left: 2.5vw;
-    margin-bottom: 2.5vw;
-    background-image: url("background.png");
+    
+    position: absolute;
+    top: 2.5vh;
+    left: 2.5vw;
+}
+.art-image {
+    width: 100%;
+    height: 100%;
     background-size: 100% 100%;
     background-repeat: no-repeat;
+    opacity: 0%;
+    z-index: 20;
+}
+
+#background {
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-image: url(full-image.png);
+    opacity: 80%;
+    z-index: 0;
+}
+
+#s2-1-image {
+    background-image : url(section2.1.png);
+}
+
+#s3-final-image {
+    background-image : url(section3-final.png);
+}
+
+#s2-final-image{
+    background-image : url(section2-final.png);
+}
+
+#s1-final-image{
+    background-image : url(section1-final.png);
+}
+
+#s3-2-image {
+    background-image : url(section3.2.png);
+}
+
+#s1-2-image {
+    background-image : url(section1.2.png);
+}
+
+#s2-2-image {
+    background-image : url(section2.2.png);
+}
+
+#s1-1-image {
+    background-image : url(section1.1.png);
+}
+
+#s3-1-image {
+    background-image : url(section3.1.png);
+}
+
+
+.pointer {
     position: absolute;
-
+    width: 3vw;
+    height: 3vw;
+    background-image: url("pointer.png");
+    background-size: contain;
+    z-index: 10;
+    opacity: 80%;
 }
 
-.centered {
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: auto;
-    margin-bottom: auto;
+#s2-1-pointer {
+    top: 17vh;
+    right: 8vw;
 }
+
+#s2-final-pointer {
+    bottom: 8vh;
+    left: 15vw;
+}
+
+#s3-final-pointer {
+    top: 18vh;
+    right: 28vw;
+}
+
+#s1-final-pointer {
+    top: 25vh;
+    left: 57.5vw;
+}
+
+#s3-2-pointer {
+    top: 30vh;
+    left: 10vw;
+}
+
+#s1-2-pointer {
+    top: 45vh;
+    left: 38vw;
+}
+
+#s2-2-pointer {
+    top: 62vh;
+    left: 52vw;
+}
+
+#s1-1-pointer {
+    bottom: 20vh;
+    right: 10vw;
+}
+
+#s3-1-pointer {
+    top: 10vh;
+    left: 20vw;
+}
+
+.pointer:hover {
+    background-image: url("pointer-hover.png");
+    opacity: 80%;
+}
+
+
+.element:has(.pointer:hover) > .art-image {
+    opacity: 100%;
+}
+
+
