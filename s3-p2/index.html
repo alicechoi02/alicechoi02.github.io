@@ -1,47 +1,30 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-<head>
-    <title> money tree</title>
-    <script src="main.js"></script>
-    <link rel="stylesheet" href="style.css"> 
-    <link rel="icon" type="image/x-icon" href="seed.png">
-</head>
-
-<div id = "description" class = "desc">
-    <p> Making giving back easier than ever. With <a href ="https://ifttt.com/applets/Bmy2K8Mc-if-a-new-event-contains-payday-on-personal-then-plant-a-tree-for-you">this</a> applet, More:Tree will plant a tree under your name every time your paycheck comes in. Get started now!</p>
-</div>
-<div id = "left">
-    <div id = "if">
-        <div id = "if-text", class = "IFTTT">
-            IF
-        </div>
-        <div id = "if-gcal">
-        </div>
+  <head>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.5.0/p5.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.5.0/addons/p5.sound.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <link rel="icon" type="image/x-icon" href="favicon.png">
+    <meta charset="utf-8" />
+    <title>3D Dot Art</title>
+  </head>
+  <body>
+    <img src = "title.png" id = "title">
+    <!-- <div class="title">
+      Hello
+    </div> -->
+    <div id="instructions">
+      <p>
+        Input a value below to set the duration of the drawing and then press
+        Go! to generate your very own 3D drawing! We recommend values between
+        100 and 1000 for the best results.
+      </p>
+      <input type="text" id="step-input" />
+      <button id="draw">Go!</button>
     </div>
 
-    <div id = "this">
+    <div id="sketch-canvas">
+      <script src="sketch.js"></script>
     </div>
-
-    <div id = "then">
-        <div id = "then-text", class = "IFTTT THEN">
-            THEN
-        </div>
-        <div id = "then-moretree">
-        </div>
-    </div>
-
-</div>
-
-<div id = "right">
-    <div id = "tree-cover">
-    </div>
-
-    <div id = "refresh">
-        <button onclick="refreshPage()" class = "refresh-button">
-            <img id="refresh-button" src="refresh.png" width="100%" height="100%" onclick="refreshPage();" alt = "This button refreshes the page" />
-          </button>
-    </div>
-    <div id = "applet" class = "app-button">
-        <a href ="https://ifttt.com/applets/Bmy2K8Mc-if-a-new-event-contains-payday-on-personal-then-plant-a-tree-for-you">Connect to Applet</a>
-    </div>
-</div> 
+  </body>
+</html>
