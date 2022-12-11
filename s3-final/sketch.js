@@ -44,12 +44,11 @@ function draw3d(input) {
     results.style("width", "50vw");
     results.style("text-align", "center");
     results.style("padding-top", "3vh");
-    results.style("padding-bottom", "1vh");
+    results.style("padding-bottom", "3vh");
 
     done = createButton("Do it again");
     done.mousePressed(refreshPage);
-
-
+    done.style("margin-bottom", "5vh");
     noLoop();
   }
 }
