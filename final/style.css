@@ -308,14 +308,3 @@ p {
     border-left: solid 5px black; 
 }
 
-.read-resp:hover .section-popup {
-    display: block;
-    position: fixed;
-    left: 65vw; 
-    top: 15vh;
-
-    width: 30vw;
-    height: auto;
-    padding-left: 3vh; 
-    border-left: solid 5px black; 
-}
