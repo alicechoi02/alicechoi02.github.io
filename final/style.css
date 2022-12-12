@@ -1,3 +1,57 @@
+/***** Text Styling *****/
+h1 {
+    font-family: 'Fraunces' , sans-serif;
+    font-weight: 600; 
+    margin: 0px;
+    font-size: 5vh;
+}
+
+h2 {
+    font-family: 'Chivo' , serif;
+    font-weight: 500; 
+    margin: 0px;
+    font-size: 4vh;
+}
+
+h3 {
+    font-family: 'Chivo' , serif;
+    font-weight: 300; 
+    color: black;
+    margin: 0px;
+}
+
+p {
+    font-family: 'Fraunces', serif;
+    font-weight: 200; 
+    
+}
+
+.s1 {
+    color: rgb(245, 198, 63);
+}
+
+.s2 {
+    color: rgb(137, 207, 230);
+}
+
+.s3 {
+    color: rgb(242 125, 125);
+}
+
+#title {
+    display: block;
+    position: absolute;
+    left: 63vw; 
+    top: 3vh;
+
+
+    width: 35vw;
+    height: auto;
+    padding-left: 4vh;
+}
+
+/***** Main Image Styling *****/
+
 .element {
     width: 60vw;
     height: 95vh;
@@ -62,6 +116,7 @@
     background-image : url(section3.1.png);
 }
 
+/***** Pointers *****/
 
 .pointer {
     position: absolute;
@@ -118,84 +173,7 @@
     left: 12vw;
 }
 
-.pointer:hover {
-    background-image: url("pointer-hover.png");
-    opacity: 80%;
-}
-
-
-.element:has(.pointer:hover) > .art-image {
-    opacity: 100%;
-}
-
-.element:has(.pointer:hover) > .section-popup {
-    display: block;
-    position: absolute;
-    left: 63vw; 
-    top: 15vh;
-
-    width: 30vw;
-    height: auto;
-    padding-left: 3vh; 
-    border-left: solid 5px black; 
-}
-
-.section-popup {
-    display: none;
-    
-}
-
-#title {
-    display: block;
-    position: absolute;
-    left: 63vw; 
-    top: 3vh;
-
-
-    width: 35vw;
-    height: auto;
-    padding-left: 4vh;
-}
-
-h1 {
-    font-family: 'Fraunces' , sans-serif;
-    font-weight: 600; 
-    margin: 0px;
-    font-size: 5vh;
-}
-
-h2 {
-    font-family: 'Chivo' , serif;
-    font-weight: 500; 
-    margin: 0px;
-    font-size: 4vh;
-}
-
-h3 {
-    font-family: 'Chivo' , serif;
-    font-weight: 300; 
-    color: black;
-    margin: 0px;
-}
-
-p {
-    font-family: 'Fraunces', serif;
-    font-weight: 200; 
-    
-}
-
-.s1 {
-    color: rgb(245, 198, 63);
-}
-
-.s2 {
-    color: rgb(137, 207, 230);
-}
-
-.s3 {
-    color: rgb(242 125, 125);
-}
-
+/***** Reading Responses *****/
 #week-2 {
     width: 10vw;
     height: 7vh;
@@ -293,6 +271,41 @@ p {
     position: absolute;
     left: 3vw;
     top: 34vh;
+}
+
+#week-16 {
+    width: 2.5vw;
+    height: 20vh;
+    position: absolute;
+    left: 3vw;
+    top: 11vh;
+}
+
+/***** Hovers *****/
+.section-popup {
+    display: none;
+    
+}
+
+.pointer:hover {
+    background-image: url("pointer-hover.png");
+    opacity: 80%;
+}
+
+.element:has(.pointer:hover) > .art-image {
+    opacity: 100%;
+}
+
+.element:has(.pointer:hover) > .section-popup {
+    display: block;
+    position: absolute;
+    left: 63vw; 
+    top: 15vh;
+
+    width: 30vw;
+    height: auto;
+    padding-left: 3vh; 
+    border-left: solid 5px black; 
 }
 
 .read-resp:hover .section-popup {
